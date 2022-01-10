@@ -9,7 +9,7 @@
 
 ## Usage
 :construction:  
-I still need to figure out how to make it easy to distribute
+I still need to figure out how to make it easy to distribute as some kind of binary
 
 ```sh
 # Generic usage
@@ -37,7 +37,7 @@ ruby app.rb -s false -l 8
 
 👤 **Vinicius Kammradt**
 
-* Website: kammradt.super.site
+* Website: [kammradt.super.site](https://kammradt.super.site)
 * Twitter: [@kammzinho](https://twitter.com/kammzinho)
 * Github: [@kammzinho](https://github.com/kammzinho)
 * LinkedIn: [@vinicius-kammradt](https://linkedin.com/in/vinicius-kammradt)
