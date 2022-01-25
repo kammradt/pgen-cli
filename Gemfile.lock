@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    password_generator (0.1.0)
+    password_generator_cli (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -12,7 +12,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  password_generator!
+  password_generator_cli!
   rake (~> 13.0)
 
 BUNDLED WITH

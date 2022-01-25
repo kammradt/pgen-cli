@@ -8,9 +8,12 @@
 > A password generator build on learning purpouses
 
 ## Usage
-:construction:  
-I still need to figure out how to make it easy to distribute as some kind of binary
+### Install
+```sh
+gem install password_generator_cli
+```
 
+### Examples
 ```sh
 # Generic usage
 pgen [OPTIONS]
