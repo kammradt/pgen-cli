@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to pass, the password generator  👋</h1>
+<h1 align="center">Welcome to pgen 👋</h1>
 <p>
   <a href="https://twitter.com/kammzinho" target="_blank">
     <img alt="Twitter: kammzinho" src="https://img.shields.io/twitter/follow/kammzinho.svg?style=social" />
@@ -13,23 +13,23 @@ I still need to figure out how to make it easy to distribute as some kind of bin
 
 ```sh
 # Generic usage
-ruby app.rb [OPTIONS]
+pgen [OPTIONS]
 
 # Minimal example (using all defaults)
 #  12 chars, being a to z, A to Z, 0 to 9 and  ! to /
-ruby app.rb 
+pgen 
 > 5ugvs5.JOv!1
 
 # Changing the default length
-ruby app.rb -l 32
+pgen -l 32
 > mtu2WUh+M8ry2qw&YO#mI.Y!aSd43noi
 
 # Generating a pin (only numbers)
-ruby app.rb -p -l 8 
+pgen -p -l 8 
 > 27843429
 
 # Generating without special characters (default is true)
-ruby app.rb -s false -l 8 
+pgen -s false -l 8 
 > HvLaAWB1
 ```
 

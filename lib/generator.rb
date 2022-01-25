@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class PasswordGenerator
+class Generator
   attr_accessor :available_chars
 
   def initialize
@@ -17,15 +17,6 @@ class PasswordGenerator
 
   private
 
-  def get_available_chars(options)
-    return available_chars[:numbers] if options[:numbers_only]
-
-    regular_and_numbers = available_chars[:lower_upper] + available_chars[:numbers]
-    return regular_and_numbers + available_chars[:special_chars] if options[:include_special_chars]
-
-    regular_and_numbers
-  end
-
   def random_password(options)
     password_length = options[:length]
 
@@ -33,5 +24,14 @@ class PasswordGenerator
     available_chars = get_available_chars(options) * password_length
 
     available_chars.shuffle.join[0...password_length]
+  end
+
+  def get_available_chars(options)
+    return available_chars[:numbers] if options[:numbers_only]
+
+    regular_and_numbers = available_chars[:lower_upper] + available_chars[:numbers]
+    return regular_and_numbers + available_chars[:special_chars] if options[:include_special_chars]
+
+    regular_and_numbers
   end
 end
